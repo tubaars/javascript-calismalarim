@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        
+        // Hava sıcaklığı 0'dan düşükse dondurucu,15'ten düşükse soğuk,25'ten düşükse ılık, diğer durumlarda sıcak yazan uygulama
+
+            var sicaklik = Number(prompt("Hava sıcaklığını giriniz:"));
+
+       if(sicaklik < 0) {
+           alert("dondurucu");
+       } else if(sicaklik < 15) {
+           alert("soğuk");
+       } else if(sicaklik < 25) {
+           alert("ılık");
+       } else {
+           alert("sıcak");
+       }
+
+        </script>
+    </body>
+</html>
