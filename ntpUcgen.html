@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            class Ucgen {
+            constructor(genislik, yukseklik) {
+                this.genislik = genislik;
+                this.yukseklik = yukseklik;
+            }
+            
+            alan() {
+                return (this.genislik * this.yukseklik) / 2;
+            }
+        }
+        
+        var ucgen1 = new Ucgen(1, 2);
+        document.write("ucgen1 alan = " + ucgen1.alan() + "<br>");
+        
+        var ucgen2 = new Ucgen();
+        ucgen2.genislik = Number(prompt("ucgen2 genişlik:"));
+        ucgen2.yukseklik = Number(prompt("ucgen2 yükseklik:"));
+        document.write("ucgen2 alan = " + ucgen2.alan());
+            
+
+        </script>
+    </body>
+</html>
