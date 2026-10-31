@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            
+            var sayilar=new Array();
+            var n=prompt("dizi eleman sayısı:");
+            
+            for(var i=0; i<n; i++)
+                sayilar[i]=prompt(i+" indiskli eleman");
+
+             var toplam=0, ortalama=0;
+             for(var i=0; i<n; i++)
+                 toplam=toplam+sayilar[i];
+                 
+                 ortalama=toplam/n;
+
+                 document.write("ortalama="+ortalama);
+              
+        </script>
+    </body>
+</html>
